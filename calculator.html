@@ -5,6 +5,7 @@ function cube() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 3);
 }
+
 var toRadians = function (degree) {
     return degree * (Math.PI / 180);
 };
@@ -20,6 +21,12 @@ var num = document.getElementById("n1");
 num.value = roundNumber(Math.sin(toRadians(num.value)));
 //num.value = Math.sin(toRadians(num.value));
 }
+
+function fourth() {
+var num = document.getElementById("n1");
+num.value = Math.pow(num.value, 4);
+}
+
 </script>
 </head>
 <body>
@@ -28,7 +35,11 @@ Number:
 <input type="text" id="n1">
 <p>
 <button onclick="cube()"> x^3 </button>
+
 <button onclick="sino()"> sin(x) </button>
+
+<button onclick="fourth()"> x^4 </button>
+
 </p>
 </body>
 </html>
